@@ -1,0 +1,48 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.snenenenenenene/stadiq",
+  "title": "Stadiq",
+  "description": "Road works, De Lijn transit disruptions, air quality and briefings for Flanders and Brussels.",
+  "version": "0.1.2",
+  "websiteUrl": "https://stadiq.app/developers/mcp",
+  "icons": [
+    {
+      "src": "https://stadiq.app/icon.png",
+      "mimeType": "image/png",
+      "sizes": [
+        "512x512"
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "stadiq-mcp",
+      "version": "0.1.2",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "STADIQ_API_KEY",
+          "description": "Stadiq API key (sq_live_\u2026). Free developer key at https://stadiq.app/developers",
+          "isRequired": true,
+          "isSecret": true,
+          "format": "string"
+        },
+        {
+          "name": "STADIQ_BASE_URL",
+          "description": "API host. Defaults to https://stadiq.app",
+          "isRequired": false,
+          "default": "https://stadiq.app",
+          "format": "string"
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/snenenenenenene/stadiq-mcp-server",
+    "source": "github"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "name": "stadiq-mcp",
+  "version": "0.1.2",
+  "mcpName": "io.github.snenenenenenene/stadiq",
+  "description": "MCP server for the Stadiq API \u2014 road works, transit disruptions, air quality and operations briefings for Flanders and Brussels.",
+  "type": "module",
+  "bin": {
+    "stadiq-mcp": "server.mjs"
+  },
+  "files": [
+    "server.mjs",
+    "server.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.0"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snenenenenenene/stadiq-mcp-server.git"
+  },
+  "homepage": "https://stadiq.app/api-docs",
+  "bugs": {
+    "url": "https://github.com/snenenenenenene/stadiq-mcp-server/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "stadiq",
+    "flanders",
+    "brussels",
+    "road-works",
+    "air-quality",
+    "de-lijn"
+  ]
+}
